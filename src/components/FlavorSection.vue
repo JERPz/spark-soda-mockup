@@ -37,12 +37,8 @@ defineProps(['data'])
         </div>
 
         <div class="flex justify-center items-center">
-            <img
-                :src="data.image"
-                loading="eager"
-                decoding="async"
-                class="w-full max-w-[280px] md:max-w-[420px] drop-shadow-[0_40px_60px_rgba(0,0,0,0.9)] animate-float"
-            />
+            <img :src="data.image" loading="eager" decoding="async"
+                class="w-full max-w-[280px] md:max-w-[420px] drop-shadow-[0_40px_60px_rgba(0,0,0,0.9)] animate-float" />
         </div>
     </div>
 </template>
@@ -52,5 +48,4 @@ defineProps(['data'])
 .fade-slide-leave-active {
     transition: all 0.2s ease-out;
 }
-
 </style>

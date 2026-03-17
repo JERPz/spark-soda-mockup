@@ -10,7 +10,8 @@ const scrollToFlavors = () => {
 </script>
 
 <template>
-    <section class="relative h-screen flex flex-col items-center justify-center text-center px-4 bg-black overflow-hidden z-30">
+    <section
+        class="relative h-screen flex flex-col items-center justify-center text-center px-4 bg-black overflow-hidden z-30">
         <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
             <h1 class="text-[22vw] font-black leading-none tracking-tighter text-white/[0.03] italic uppercase">
                 SPARK
@@ -25,10 +26,10 @@ const scrollToFlavors = () => {
             <div class="relative w-full max-w-[600px] h-[300px] md:h-[450px] flex justify-center items-center my-4">
                 <img loading="eager" :src="berryCan"
                     class="absolute left-[5%] md:left-[10%] w-[160px] md:w-[240px] -rotate-12 blur-[1px] opacity-70 transition-all duration-700 hover:-translate-x-5 drop-shadow-[0_20px_50px_rgba(155,77,150,0.3)] z-10" />
-                
+
                 <img loading="eager" :src="limeCan"
                     class="absolute right-[5%] md:right-[10%] w-[160px] md:w-[240px] rotate-12 blur-[1px] opacity-70 transition-all duration-700 hover:translate-x-5 drop-shadow-[0_20px_50px_rgba(0,255,162,0.3)] z-10" />
-                
+
                 <img loading="eager" :src="orangeCan"
                     class="relative w-[200px] md:w-[320px] z-20 animate-float drop-shadow-[0_30px_60px_rgba(255,107,53,0.5)]" />
             </div>

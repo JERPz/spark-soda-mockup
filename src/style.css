@@ -8,7 +8,7 @@
 
 @layer base {
     html {
-        scroll-padding-top: 15vh; /* offset anchors so sticky waits a bit */
+        scroll-padding-top: 15vh;
     }
     body {
         @apply bg-black text-white antialiased overflow-x-hidden;
@@ -16,7 +16,6 @@
     }
 }
 
-/* reduce animation for users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.1ms !important;

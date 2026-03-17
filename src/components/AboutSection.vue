@@ -33,7 +33,7 @@ defineProps({
                             {{ val }}
                         </span>
                         <span class="text-[10px] md:text-xs uppercase tracking-widest opacity-50 font-bold">{{ label
-                            }}</span>
+                        }}</span>
                     </div>
                 </div>
 
