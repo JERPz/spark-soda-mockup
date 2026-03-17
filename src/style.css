@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+    --color-spark-green: #00ffa2;
+    --color-spark-orange: #ff6b35;
+    --color-spark-berry: #9b4d96;
+}
+
+@layer base {
+    html {
+        scroll-padding-top: 15vh; /* offset anchors so sticky waits a bit */
+    }
+    body {
+        @apply bg-black text-white antialiased overflow-x-hidden;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+/* reduce animation for users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.1ms !important;
+        transition-duration: 0.1ms !important;
+    }
+}
+
+@utility animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
